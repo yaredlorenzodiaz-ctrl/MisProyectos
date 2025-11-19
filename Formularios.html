@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    <h1>Formulario de Ejemplo</h1>
+
+    <form action="">
+
+        <fieldset style="background-color: rgb(255, 255, 255)">
+
+
+            <legend>Datos del Usuario</legend> <br>
+
+            <label for="usuario-nombre">Nombre del Usuario</label> <br>
+            <input type="text" id="usuario-nombre" name="usuario_nombre" required><br><br>
+
+            <label for="usuario-password">Contraseña</label> <br>
+            <input type="password"id="usuario-password" name="usuario-password" required> <br><br>
+
+            <label for="usuario-email">Correo electrónico</label> <br>
+            <input type="mail" id="usuario-email" name="usuario-email" required> <br><br>
+
+        </fieldset>
+        <br>
+
+
+
+        <fieldset style="background-color: rgb(104, 212, 94)">
+
+            <legend>Envío de archivos</legend>
+
+            <label for="envio-fecha">Fecha y hora</label> <br>
+            <input type="date" id="envio-fecha" name="envio_fecha"><br><br>
+
+            <label for="">Adjunta un fichero</label><br>
+            <input type="file" id="envio-fichero" name="envio-fichero"><br><br>
+
+        </fieldset>
+
+        
+        <fieldset style="background-color: rgb(217, 173, 180)">
+
+            <legend>Selección múltiple</legend>
+            <p><strong>Frutas (checkbox):</strong></p>
+
+            <label for="fruta-platano">Checkbox 1 - Plátanos</label> 
+            <input type="Checkbox" name="frutas[]" id="fruta-platano" value="platano"> <br>
+
+            <label for="fruta-manzana">Checkbox 2 - Naranjas</label> 
+            <input type="Checkbox" name="frutas[]" id="fruta-manzana"> <br>
+
+            <label for="">Checkbox 3 - Manzanas</label> 
+            <input type="Checkbox" name="" id=""> <br>
+
+            <label for="">Radio 1 - Tomate</label> 
+            <input type="radio" name="" id=""> <br>
+
+            <label for="">Radio 2 - Aguacate</label> 
+            <input type="radio" name="" id=""> <br>
+
+            <label for="">Radio 3 - Zanahoria</label> 
+            <input type="radio" name="" id=""> <br>
+            <br>
+
+            <label for="">Selecciona: </label>
+            <select name="" id="">
+
+                <option value="">Ternera</option>
+                <option value="">Pollo</option>
+                <option value="">Pescado</option>
+
+
+            </select>
+        </fieldset>
+        <br>
+
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Limpiar datos</button>
+
+
+
+    </form>
+
+</html>
