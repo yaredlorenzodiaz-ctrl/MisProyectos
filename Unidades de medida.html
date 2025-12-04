@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas en CSS</title>
+    <link rel="stylesheet" href="Unidades de medida.css">
+</head>
+<body>
+    <h1>Ejemplos Visuales de Unidades en CSS</h1>
+
+    <!-- 1. ABSOLUTAS -->
+    <h2>1. Unidades Absolutas (px)</h2>
+    <div class="seccion">
+        <div class="explicacion">
+            Las unidades absolutas tienen un valor fijo.<br>
+            Esta caja siempre medirá 300px x 100px sin importar la pantalla.
+        </div>
+        <div class="caja-absoluta"> <!--caja gris píxeles-->
+            300px x 100px
+        </div>
+    </div>
+
+    <!-- 2a. EM -->
+    <h2>2a. em</h2>
+    <div class="seccion">    <!-- amarilla -->
+        <div class="explicacion">  <!-- color coral -->  
+            <strong>em</strong> es relativo al tamaño del texto del elemento padre.<br>
+            Si el padre tiene 20px, 1.5em = 30px.
+        </div>
+
+        <div class="padre-em"> <!--verde claro -->
+            Padre (20px)
+            <p class="hijo-em">Hijo (1.5em = 30px, margen 2em = 60px)</p>  <!--verde más oscuro -->
+        </div>
+    </div>
+
+    <!-- 2b. REM -->
+    <h2>2b. rem</h2>
+    <div class="seccion"> <!--amarilla-->
+        <div class="explicacion"> <!-- color coral -->  
+            <strong>rem</strong> es relativo al tamaño del texto de &lt;html&gt;.<br>
+            2rem = 32px si html = 16px.
+        </div>
+
+        <p class="titulo-rem">Título con rem (32px)</p> <!--azul celeste -->
+    </div>
+
+    <!-- 2c. % -->
+    <h2>2c. %</h2>
+    <div class="seccion">  <!--amarilla-->
+        <div class="explicacion"> <!-- color coral --> 
+            El porcentaje depende del tamaño del contenedor.<br>
+            Esta barra ocupa el 50% del ancho y el 50% del alto del contenedor.
+        </div>
+
+        <div class="contenedor">
+            <div class="barra"></div>
+        </div>
+    </div>
+
+    <!-- 2d. vw/vh -->
+    <h2>2d. vw y vh</h2>
+    <div class="seccion"> <!--amarilla-->
+        <div class="explicacion"> <!-- color #f7bbbb -->  
+            <strong>vw</strong> y <strong>vh</strong> dependen del tamaño de la ventana (viewport).<br>
+            Esta caja ocupa todo el ancho (100vw) y 40% del alto (40vh).
+        </div>
+
+        <div class="pantalla-completa">
+            100vw x 40vh (texto = 3vw)
+        </div>
+    </div>
+</body>
+</html>

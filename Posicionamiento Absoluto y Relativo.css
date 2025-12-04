@@ -1,0 +1,35 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+
+#outer {
+   margin: 5em;
+   height: 4em;
+   border: 1px solid #ff0000; /*rojo*/
+   position: relative;
+}
+/*  Un elemento position: relative se posiciona en relación con su posición normal.
+Esto NO mueve la caja. Lo que hace es:
+   - convertir a outer en un “ancla”
+   - para que los elementos hijos  (inner) se coloquen respecto a él.*/
+
+#inner {
+   width: 6em;
+   height: 4em;
+   background-color: #999999; /*gris*/
+   position: absolute;
+   left: 5em;
+   text-align: center;
+   line-height: 4em;      /* esta es una manera de centrar el texto verticalmente, darle el mismo tamaño que height (antiguo)*/
+   
+}
+/*  Un elemento position: absolute; se posiciona en relación con el padre en lugar de posicionarse en relación con la ventana gráfica.
+
+Esto significa: 
+   - La caja se saca del flujo normal de la página. 
+   - Puedes moverla libremente dentro del contenedor posicionado.
+
+Para mover el INNER hay qUe poner posición absoluta a inner pero cambiar a posición relativa a
+outer (para que se desplace con respecto a outer)  */

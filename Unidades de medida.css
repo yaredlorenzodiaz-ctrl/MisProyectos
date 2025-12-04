@@ -1,0 +1,106 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        /* Bloques de secciones */
+        .seccion {
+            background-color: yellow;
+            border-left: 5px solid #888;
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Bloques de texto explicativo */
+        .explicacion {
+            font-size: 14px;
+            color: #444;
+            background: #f7bbbb;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+
+        /* --------------- 1. ABSOLUTAS ----------------- */
+        .caja-absoluta {
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            font-size: 16px;
+            background: #f0f0f0;
+            margin-top: 10px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        /* --------------- 2a. EM ---------------------- */
+        .padre-em {
+            font-size: 20px;
+            border: 1px solid black;
+            background: #e4fbe4;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .hijo-em {
+            font-size: 1.5em;   /* 30px */
+            margin-left: 2em;   /* 60px */
+            background: #c6ecc6;
+            padding: 5px 10px;
+        }
+
+        /* --------------- 2b. REM ---------------------- */
+        html {
+            font-size: 16px;
+        }
+
+        .titulo-rem {
+            font-size: 2rem;    /* 32px */
+            margin-bottom: 1rem;/* 16px */
+            background: #dce7ff;
+            padding: 10px;
+            display: inline-block;
+            border-left: 5px solid #4b7bec;
+        }
+
+        /* --------------- 2c. % ------------------------ */
+        .contenedor {
+            width: 400px;
+            height: 200px;
+            background: #f2f2f2;
+            border: 1px solid #aaa;
+            margin-top: 10px;
+        }
+
+        .barra {
+            width: 50%;
+            height: 50%;
+            background: #5dade2;
+        }
+
+        /* --------------- 2d. VW / VH ------------------ */
+        .pantalla-completa {
+            width: 100vw;
+            height: 40vh;
+            background: #c0392b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3vw; /* crece con el ancho */
+            margin-top: 10px;
+        }
+
+     

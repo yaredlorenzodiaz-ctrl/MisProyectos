@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Lectura de Guanarteme</title>
+    <link rel="stylesheet" href="Club_De_Lectura.css">
+
+</head>
+
+<body>
+
+ <header id="top">
+    <h1>Club de Lectura de Guanarteme</h1>
+    <h2>Leer nos une en un espacio de encuentro y cultura</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#Próxima-Reunión">Próxima Reunión</a></li>
+            <li><a href="#Reseñas">Reseñas</a></li>
+            <li><a href="#Calendario">Calendario</a></li>
+            <li><a href="#Inscripción">Inscripción</a></li>
+            <li><a href="#Privacidad">Política de Privacidad</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+ </header>   
+
+ <main>
+    <section id="Próxima-Reunión">
+        <h2>Próxima Reunión</h2>
+        <article>
+            <h3>Libro del mes: "Cien años de soledad"</h3>
+            <figure>
+                <img src="100 años de soledad.jpg" alt="Portada del libro -100 años de soledad-">
+                <figcaption>Cien años de soledad por Grabriel García Márquez</figcaption>
+            </figure>
+            <p>Fecha: 10 de diciembre de 2025 | Hora: 18:00   | Lugar: Sede Vecinal Guanarteme</p>
+            <ul>
+                <li>Presentacion del libro</li>
+                <li>Discusión sobre personajes y trama</li>
+                <li>Lectura de pasajes seleccionados</li>
+                <li>Debate y preguntas</li>
+                <li>Cierre y recomendaciones de lectura</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="Reseñas">
+        <h2>Reseñas y Recomendaciones</h2>
+        <article>
+            <h3>"La Sombra del Viento"</h3>
+            <p>Autor: Carlos Ruiz Zafón</p>
+            <p>Reseña: Una historia envolvente en la Barcelona de la posguerra, donde los libros esconden secretos y misterios que cautivan a los lectorues.</p>
+        </article>
+        <article>
+            <h3>"El Principito"</h3>
+            <p>Autor: Antoine de Saint-Exupéry</p>
+            <p>Reseña: Una obra atemporal que combina filosofía y una narrativa poética, otorgando valores como la amistad, el amor y la curiosidad al lector</p>
+        </article>
+    </section>
+
+    <section id="Calendario">
+        <h2>Calendario de Eventos del Club</h2>
+        <table>
+            <caption>Próxima reuniones del Club</caption>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Libro del mes</th>
+                    <th>Autor</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10/12/2025</td>
+                    <td>Cien Años de Soledad</td>
+                    <td>Gabriel García Márquez</td>
+                    <td>Sede Vecinal Guanarteme</td>
+                </tr>
+                <tr>
+                    <td>07/01/2026</td>
+                    <td>Crónica de una muerte anunciada</td>
+                    <td>Grabriel García Márquez</td>
+                    <td>Sede Vecinal Guanarteme</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Inscripción">
+        <h2>Inscripción a los eventos del Club</h2>
+        <form action="https://webhook.site/74fd41ad-23ea-44ce-9370-e28a980d2a86" method="POST">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+
+                <label for="genero">Género Literario Preferido</label>
+                <select id="genero" name="genero" required>
+
+                    <option value="">Seleccion</option>
+                    <option value="novela">Novela</option>
+                    <option value="poesia">Poesía</option>
+                    <option value="ensayo">Ensayo</option>
+                    <option value="ciencian_ficcion">Ciencia Ficción</option>
+        
+                </select><br>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Preferencias de Contacto</legend>
+                <label><input type="checkbox" name="Contacto" value="email">Email</label>
+                <label><input type="checkbox" name="Contacto" value="telefono">Teléfono</label>
+
+            </fieldset>  
+
+            <fieldset>
+
+                <legend>Horario Preferido</legend>
+                <label><input type="radio" name="horario" value="mañana" required> Mañana</label>
+                <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+                <label><input type="radio" name="horario" value="noche"> Noche</label>
+
+            </fieldset>
+
+            <button type="submit">Enviar Inscripción</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Contenido Complementario</h2>
+        <ul>
+            <li><a href="#Consejos">Consejos para participar</a></li>
+            <li><a href="#Normas">Normas del Club</a></li>
+            <li><a href="#Recordatorios">Recordatorios</a></li>
+            <li><a href="#Tips">Lista de tips de lectura</a></li>
+        </ul>
+    </aside>
+
+    <section id="Consejos">
+        <h3>Consejos para Participar</h3>
+        <p>Participa activamente en las discisiones, pero siempre respetando a los demas, así como los turnos de palabra</p>
+    </section>
+
+    <section id="Normas">
+        <h3>Normas del Club</h3>
+        <p>Respeto ante todo entre los miembros</p>
+    </section>
+
+     <section id="Recordatorios">
+        <h3>Recordatorios</h3>
+        <p>No olvidar traer el libro del mes y los apuntes de la sesion anterior. Confirmar la asistencia cuanto antes por favor.</p>
+    </section>
+
+    <section id="Tips">
+        <h3>Lista de tips de lectura</h3>
+        <p>Subrayar ideas principales, tomar notas, participar y compatir recomendaciones</p>
+    </section>
+
+    <section id="Privacidad">
+        <h2>Política de Privacidad</h2>
+        <p>El Club de lectura de Guanarteme garantiza la confidencialidad de los datos personales proporcionados por los participantes y se compromete a utilizarlos únicamente con fines relacionados con la gestión de las actividades del club.</p>
+    </section>
+
+ </main>
+
+
+    <footer>
+        <p>&copy; 2025 Club de Lectura de Guanarteme</p>
+        <p><a href="#top">Volver arriba</a></p>
+        <p>
+            <a href="https://www.facebook.com/?locale=es_ES">Facebook</a> |
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjasYWHhZ6RAxWLcKQEHXn8O_MQFnoECA0QAQ&url=https%3A%2F%2Fx.com%2F%3Flang%3Des&usg=AOvVaw1N8-ZQhZxcJ7ZB5iCM4SZh&opi=89978449">Twitter</a> |
+            <a href="https://www.instagram.com">Instagram</a>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
